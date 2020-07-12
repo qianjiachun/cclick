@@ -1,0 +1,115 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'E:\\NodeJS\\node.exe',
+1 verbose cli   'E:\\NodeJS\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@4.1.2
+3 info using node@v7.7.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'E:\\前端学习源码\\NPM包\\cclick',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\hasee\AppData\Roaming\npm-cache\cclick\1.0.5\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\hasee\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle cclick@1.0.5~prepublish: cclick@1.0.5
+11 silly lifecycle cclick@1.0.5~prepublish: no script for prepublish, continuing
+12 info lifecycle cclick@1.0.5~prepare: cclick@1.0.5
+13 silly lifecycle cclick@1.0.5~prepare: no script for prepare, continuing
+14 verbose tar pack [ 'C:\\Users\\hasee\\AppData\\Roaming\\npm-cache\\cclick\\1.0.5\\package.tgz',
+14 verbose tar pack   'E:\\前端学习源码\\NPM包\\cclick' ]
+15 verbose tarball C:\Users\hasee\AppData\Roaming\npm-cache\cclick\1.0.5\package.tgz
+16 verbose folder E:\前端学习源码\NPM包\cclick
+17 verbose addLocalTarball adding from inside cache C:\Users\hasee\AppData\Roaming\npm-cache\cclick\1.0.5\package.tgz
+18 verbose correctMkdir C:\Users\hasee\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+19 silly cache afterAdd cclick@1.0.5
+20 verbose afterAdd C:\Users\hasee\AppData\Roaming\npm-cache\cclick\1.0.5\package\package.json not in flight; writing
+21 verbose correctMkdir C:\Users\hasee\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+22 verbose afterAdd C:\Users\hasee\AppData\Roaming\npm-cache\cclick\1.0.5\package\package.json written
+23 silly publish { name: 'cclick',
+23 silly publish   version: '1.0.5',
+23 silly publish   description: 'Non conflicting solutions of single click, double click and long press',
+23 silly publish   main: 'dist/index.js',
+23 silly publish   types: 'dist/index.d.ts',
+23 silly publish   scripts:
+23 silly publish    { test: 'echo "Error: no test specified" && exit 1',
+23 silly publish      build: 'tsc' },
+23 silly publish   repository:
+23 silly publish    { type: 'git',
+23 silly publish      url: 'git+https://github.com/qianjiachun/cclick.git' },
+23 silly publish   keywords: [ 'typescript' ],
+23 silly publish   author: { name: 'qianjiachun' },
+23 silly publish   license: 'ISC',
+23 silly publish   bugs: { url: 'https://github.com/qianjiachun/cclick/issues' },
+23 silly publish   homepage: 'https://github.com/qianjiachun/cclick#readme',
+23 silly publish   readme: '# CClick\r\n单击、双击与长按不冲突的解决方案\r\n支持TypeScript\r\n\r\n### 调用\r\n```\r\nnpm install cclick\r\n```\r\n\r\n``` typescript\r\nimport CClick from "cclick";\r\n\r\nlet a = new CClick(document.getElementById(""));\r\na.click((e) => {// TODO});\r\na.dbClick((e) => {// TODO});\r\na.longClick((e) => {// TODO});\r\n```\r\n\r\n### 说明\r\n1. 单击事件默认延迟250ms后执行\r\n2. 长按事件默认按住700ms后执行',
+23 silly publish   readmeFilename: 'README.md',
+23 silly publish   gitHead: '8c7a1cebcf69de5f44670568b34d030848f43ee1',
+23 silly publish   _id: 'cclick@1.0.5',
+23 silly publish   _shasum: 'b53d98a8d5cff07bdabecda1fcd8a8137b18fc24',
+23 silly publish   _from: '.' }
+24 info lifecycle cclick@1.0.5~prepublishOnly: cclick@1.0.5
+25 silly lifecycle cclick@1.0.5~prepublishOnly: no script for prepublishOnly, continuing
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name cclick
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry data Result {
+30 silly mapToRegistry   raw: 'cclick',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   escapedName: 'cclick',
+30 silly mapToRegistry   name: 'cclick',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri https://registry.npmjs.org/cclick
+32 verbose publish registryBase https://registry.npmjs.org/
+33 silly publish uploading C:\Users\hasee\AppData\Roaming\npm-cache\cclick\1.0.5\package.tgz
+34 verbose request uri https://registry.npmjs.org/cclick
+35 verbose request sending authorization for write operation
+36 info attempt registry request try #1 at 16:33:47
+37 verbose request using bearer token for auth
+38 verbose request id ada86fb239df7b20
+39 http request PUT https://registry.npmjs.org/cclick
+40 http 403 https://registry.npmjs.org/cclick
+41 verbose headers { date: 'Sun, 12 Jul 2020 08:33:44 GMT',
+41 verbose headers   'content-type': 'application/json',
+41 verbose headers   'transfer-encoding': 'chunked',
+41 verbose headers   connection: 'keep-alive',
+41 verbose headers   'set-cookie': [ '__cfduid=da374a1eef304acf23783ec3e332d406c1594542823; expires=Tue, 11-Aug-20 08:33:43 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+41 verbose headers   'cf-ray': '5b196bc7e869197f-HKG',
+41 verbose headers   'cf-cache-status': 'DYNAMIC',
+41 verbose headers   'cf-request-id': '03e3c1b0f40000197f5d33a200000001',
+41 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+41 verbose headers   vary: 'Accept-Encoding',
+41 verbose headers   server: 'cloudflare',
+41 verbose headers   'content-encoding': 'gzip' }
+42 verbose request invalidating C:\Users\hasee\AppData\Roaming\npm-cache\registry.npmjs.org\cclick on PUT
+43 error publish Failed PUT 403
+44 verbose stack Error: You cannot publish over the previously published versions: 1.0.5. : cclick
+44 verbose stack     at makeError (E:\nvm\v7.7.0\node_modules\npm\node_modules\npm-registry-client\lib\request.js:304:12)
+44 verbose stack     at CachingRegistryClient.<anonymous> (E:\nvm\v7.7.0\node_modules\npm\node_modules\npm-registry-client\lib\request.js:292:14)
+44 verbose stack     at E:\nvm\v7.7.0\node_modules\npm\node_modules\npm-registry-client\lib\request.js:218:7
+44 verbose stack     at Gunzip.onEnd (zlib.js:213:5)
+44 verbose stack     at emitNone (events.js:91:20)
+44 verbose stack     at Gunzip.emit (events.js:188:7)
+44 verbose stack     at endReadableNT (_stream_readable.js:974:12)
+44 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:80:11)
+44 verbose stack     at process._tickCallback (internal/process/next_tick.js:104:9)
+45 verbose statusCode 403
+46 verbose pkgid cclick
+47 verbose cwd E:\前端学习源码\NPM包\cclick
+48 error Windows_NT 10.0.18362
+49 error argv "E:\\NodeJS\\node.exe" "E:\\NodeJS\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+50 error node v7.7.0
+51 error npm  v4.1.2
+52 error code E403
+53 error You cannot publish over the previously published versions: 1.0.5. : cclick
+54 error If you need help, you may report this error at:
+54 error     <https://github.com/npm/npm/issues>
+55 verbose exit [ 1, true ]

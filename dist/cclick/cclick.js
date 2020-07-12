@@ -23,6 +23,9 @@ var CClick = /** @class */ (function () {
         var clickTimes = 0;
         var timer_db;
         element.onmousedown = function (event) {
+            if (event.button !== 0) {
+                return;
+            }
             isLong = false;
             timer_long = setTimeout(function () {
                 isLong = true;
@@ -32,6 +35,9 @@ var CClick = /** @class */ (function () {
             }, CONST_LONG_TIME);
         };
         element.onmouseup = function (event) {
+            if (event.button !== 0) {
+                return;
+            }
             if (isLong == false) {
                 clearTimeout(timer_long);
                 clickTimes++;

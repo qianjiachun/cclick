@@ -20,7 +20,10 @@ class CClick {
         let timer_long: number;
         let clickTimes: number = 0;
         let timer_db: number;
-        element.onmousedown = (event: object) => {
+        element.onmousedown = (event: any) => {
+            if (event.button !== 0) {
+                return;
+            }
             isLong = false;
             timer_long = setTimeout(() => {
                 isLong = true;
@@ -29,7 +32,10 @@ class CClick {
                 }
             }, CONST_LONG_TIME);
         };
-        element.onmouseup = (event: object) => {
+        element.onmouseup = (event: any) => {
+            if (event.button !== 0) {
+                return;
+            }
             if (isLong == false) {
                 clearTimeout(timer_long);
                 clickTimes++;
